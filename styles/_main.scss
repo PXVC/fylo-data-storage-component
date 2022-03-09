@@ -1,0 +1,115 @@
+.container {
+  margin-top: -4.3rem;
+}
+
+.section-1,
+.section-2 {
+	background-color: $dark-blue;
+	width: 320px;
+}
+
+.section-1 {
+	margin-bottom: 1.6rem;
+  border-radius: 1rem;
+	border-top-right-radius: 9.5rem;
+	padding: 3.8rem 0 3.9rem 4rem;
+
+	&__functional-btns {
+		display: flex;
+    column-gap: 1.5rem;
+    margin-top: 3.1rem;
+
+		@for $i from 1 through 3 {
+      .icon-#{$i} {
+        background: url('../images/icon-#{$i}.svg') no-repeat center / 40% $very-dark-blue;
+        padding: 2rem;
+        width: 4.8rem;
+        height: 4.8rem;
+        border-radius: 1rem;
+      }
+    }
+
+    .icon-2,
+    .icon-3 {
+      background-size: 51%;
+    }
+	}
+}
+
+.section-2 {
+  $self: &;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2.2rem 1rem 8.7rem;
+  margin-bottom: -0.6rem;
+  position: relative;
+  
+  h4 {
+    color: $pale-blue;
+    font-weight: 400;
+    font-size:1.4rem;
+
+    span {
+      font-weight: 700;
+      letter-spacing: 0.1rem;
+    }
+  }
+  
+  &__capacity-bar:disabled {
+    -webkit-appearance: none;
+    background-color: $very-dark-blue;
+    position: relative;
+    border-radius: 1rem;
+    display: flex;
+    align-items: center;
+    padding: 0.3rem;
+    margin-top: 1rem;
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 70%;
+      height: 97%;
+      background-image: linear-gradient(to right, $gradient-1, $gradient-2);
+      border-radius: 1rem;
+    }
+
+    &::-webkit-slider-thumb {
+      -webkit-appearance: none;
+      appearance: none;
+      position: relative;
+      z-index: 1;
+      width: 0.8rem;
+      height: 0.8rem;
+      background: $pale-blue;
+      border-radius: 50%;
+    }
+  }
+}
+
+.remaining-box {
+  --height: 6rem;
+  position: absolute;
+  bottom: -35%;
+  background-color: white;
+  text-align: center;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  
+  h3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: $grayish-blue;
+  }
+
+  span {
+    font-size: 4rem;
+    margin-right: 0.7rem;
+    color: $very-dark-blue;
+  }
+}

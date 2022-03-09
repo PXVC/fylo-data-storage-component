@@ -1,0 +1,63 @@
+<!-- 0 GB 1000 GB -->
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="32x32"
+			href="./images/favicon-32x32.png"
+		/>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;700&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="./styles/style.css" />
+		<title>Frontend Mentor | Fylo data storage component</title>
+	</head>
+	<body>
+		<div class="container">
+			<div class="section-1">
+				<img src="./images/logo.svg" alt="Fylo" />
+				<div class="section-1__functional-btns">
+					<a href="#" class="icon-1"></a>
+					<a href="#" class="icon-2"></a>
+					<a href="#" class="icon-3"></a>
+				</div>
+			</div>
+			<div class="section-2">
+				<h4>
+					You've used
+					<span> 815 GB </span>
+					your storage
+				</h4>
+				<!-- <progress value="80" max="100"></progress> -->
+				<input
+					type="range"
+					value="67"
+					max="100"
+					name="storage capacity bar"
+					id="capacity-bar"
+					class="section-2__capacity-bar"
+					disabled
+				/>
+				<div class="remaining-box">
+					<h3><span>185</span> GB Left</h3>
+				</div>
+			</div>
+		</div>
+		<div class="attribution">
+			Challenge by
+			<a
+				href="https://www.frontendmentor.io/challenges/fylo-data-storage-component-1dZPRbV5n"
+				target="_blank"
+				>Frontend Mentor</a
+			>. Coded by <a href="https://www.frontendmentor.io/profile/PXVC">PXVC</a>.
+		</div>
+	</body>
+</html>
