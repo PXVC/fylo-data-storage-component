@@ -1,0 +1,51 @@
+@media screen and (min-width: 1440px) {
+	body {
+		background: url('../images/bg-desktop.png') $very-dark-blue no-repeat bottom /
+			100% fixed;
+	}
+
+	.container {
+		display: flex;
+		align-items: flex-end;
+		column-gap: 3.2rem;
+	}
+
+	.section-1,
+	.section-2 {
+		margin: 0;
+	}
+
+	.section-1 {
+		width: 34.3rem;
+	}
+
+	.section-2 {
+    justify-content: unset;
+    align-items: flex-start;
+		height: 146px;
+    padding: 3rem 0 0 3rem;
+		width: 53rem;
+		text-align: left;
+	}
+
+	.remaining-box {
+		bottom: 85%;
+		left: 59%;
+		width: 17.8rem;
+
+		&::before {
+			content: '';
+			position: absolute;
+			top: 90%;
+			left: 83%;
+			width: 3rem;
+			height: 3rem;
+			clip-path: polygon(0 0, 100% 100%, 100% 0);
+			background-color: #fff;
+			/* border-top: 10px solid transparent;
+			border-bottom: 10px solid transparent;
+			border-right: 10px solid blue;
+      transform: rotate() */
+		}
+	}
+}

@@ -5,12 +5,13 @@
 .section-1,
 .section-2 {
 	background-color: $dark-blue;
+  border-radius: 1rem;
 	width: 320px;
+  box-shadow: 0 1rem 5rem 0.2rem $very-dark-blue;
 }
 
 .section-1 {
 	margin-bottom: 1.6rem;
-  border-radius: 1rem;
 	border-top-right-radius: 9.5rem;
 	padding: 3.8rem 0 3.9rem 4rem;
 
@@ -62,10 +63,11 @@
     background-color: $very-dark-blue;
     position: relative;
     border-radius: 1rem;
+    width: 90%;
     display: flex;
     align-items: center;
     padding: 0.3rem;
-    margin-top: 1rem;
+    transform: translateY(2.6rem);
 
     &::before {
       content: '';
